@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Searchbar } from '../components/Searchbar'
+import { arrayInput } from '..'
+
 
 function Autocomplete() {
   return (
-    <div>Autocomplete</div>
+    <Searchbar dropDownList={arrayInput} />
   )
 }
 
