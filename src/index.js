@@ -2,5 +2,9 @@ export const arrayInput = [
     'Test',
     'The',
     'Water',
-    'There'
+    'There',
+    'fite',
+    'text',
+    'test2',
+    'test3'
 ]

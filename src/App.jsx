@@ -1,16 +1,19 @@
+import { Link, Outlet } from "react-router-dom"
 import Router from "./Router"
 
 export default function App() {
 
   return (
-    <div className="flex justify-center items-center w-full p-12 ">
-      <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-        Button
-      </button>
-      <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-        Button
-      </button>
-      
-    </div>
+    <>
+      <div class="flex justify-center space-x-4 mt-20">
+      <Link to="/signup">
+        <button class="bg-blue-500 text-white font-medium py-2 px-4 rounded-lg">Sign Up</button>
+        </Link>
+        <Link to="/autocomplete">
+        <button class="bg-blue-500 text-white font-medium py-2 px-4 rounded-lg">Autocomplete</button>
+        </Link>
+      </div>
+      <Outlet />
+    </>
   )
 }
